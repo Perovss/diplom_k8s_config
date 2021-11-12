@@ -1,0 +1,1 @@
+# diplom_k8s_config
