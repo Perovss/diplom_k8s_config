@@ -5,9 +5,11 @@ metadata:
     app: diplom-app
   name: diplom-app
 spec:
+  type: NodePort
   ports:
   - name: http
     port: 80
     targetPort: http
+    nodePort: 30001
   selector:
     app: diplom-app
