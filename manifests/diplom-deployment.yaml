@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: diplom-app-deployment
-  namespace: monitoring
   labels:
     app: diplom-app
 spec:
