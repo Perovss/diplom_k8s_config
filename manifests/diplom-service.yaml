@@ -2,14 +2,14 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: diplom-app
-  name: diplom-app
+    app: my-diplom-app
+  name: my-diplom-app
 spec:
   type: NodePort
   ports:
   - name: http
     port: 80
     targetPort: http
-    nodePort: 30001
+    nodePort: 20000
   selector:
-    app: diplom-app
+    app: my-diplom-app

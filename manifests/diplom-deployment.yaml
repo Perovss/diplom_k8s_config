@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: diplom-app-deployment
+  name: my-diplom-app-deployment
   labels:
-    app: diplom-app
+    app: my-diplom-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: diplom-app
+      app: my-diplom-app
   template:
     metadata:
       labels:
-        app: diplom-app
+        app: my-diplom-app
     spec:
       containers:
-      - name: diplom-app
+      - name: my-diplom-app
         image: perovss/nginx.app:latest
         ports:
         - containerPort: 80
